@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Booking Confirmation</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="" alt="" class="img_fluid">
+            </a>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="index.html" class="menu_link">Home</a>
+                </li>
+                <li class="menu_item">
+                    <a href="appointment.html" class="menu_link">Book Appointment</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <h1>Your booking is complete</h1>
+    <div id="details"></div>
+    <a href="index.html">Go back to home page</a>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const time = urlParams.get('time');
+        const pet = urlParams.get('pet');
+
+        const detailsDiv = document.getElementById('details');
+        detailsDiv.innerHTML = `<p>Name: ${name}</p><p>Time: ${time}</p><p>Pet: ${pet}</p>`;
+    </script>
+</body>
+</html>

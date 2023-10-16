@@ -1,0 +1,110 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #7FFFD4;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    counter-reset: section;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 50px;
+}
+body {
+    font-family: 'Poppins' sans-serif;
+    min-height: 100vh;
+    height: 1000px;
+    overflow-x: hidden;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+ul.a {
+    list-style-type: circle;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+#hero_section {
+    background-image: url("img/dog1.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#service {
+    background-color: #7FFFD4;
+    text-align: center;
+}
+.service_list {
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+.menu {
+    white-space: nowrap;
+    transition: .5s;
+    z-index: 999;
+    position: relative;
+}
+.menu_link {
+    padding: 5px 10px;
+    position: relative;
+    transition: .4s;
+    color: #333;
+    font-weight: 500;
+}
+.menu_item {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+#changeColorButton {
+    background-color: #228B22;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.light-theme {
+    background-color: #7FFFD4;
+    color: #006400;
+}
+.dark-theme {
+    background-color: #006400;
+    color: #7FFFD4;
+}
+#additionalInfo {
+    display: none;
+}
+.btn {
+    background-color: #228B22;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

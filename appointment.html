@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <title>BookAppointment</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="" alt="" class="img_fluid">
+            </a>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="index.html" class="menu_link">Home</a>
+                </li>
+                <li class="menu_item">
+                    <a href="appointment.html" class="menu_link">Book Appointment</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h1>Book Appointment</h1>
+        <div id="petForm">
+            <form id="myForm" onsubmit="submitForm(event)">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="time">Time:</label><br>
+                <input type="time" id="time" name="time"><br><br>
+
+                <label for="pet">Pet Interested In:</label><br>
+                <select id="pet" name="pet">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="bird">Bird</option>
+                    <option value="fish">Fish</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const time = document.getElementById('time').value;
+            const pet = document.getElementById('pet').value;
+
+            window.location = `bookingConfirm.html?name=${name}&time=${time}&pet=${pet}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <title>MyPetShop</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="" alt="" class="img_fluid">
+            </a>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="index.html" class="menu_link">Home</a>
+                </li>
+                <li class="menu_item">
+                    <a href="appointment.html" class="menu_link">Book Appointment</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="hero_section">
+        <h1>Pets at Home</h1> <br /><br />
+        <p>
+            Welcome to the <strong>best</strong> pet shop in Leicester.<br />The dogs are loving yet fierce.<br />The cats are fierce yet loving.<br />
+            And more beyond you wildest dreams.<br />They say every house is not a home without a pet.<br />This is true, so why are you missing out.<br />
+            Don't delay, <strong>buy your furry friend today!</strong>
+        </p>
+        <button class="btn" onclick="showAdditionalInfo()">More Info...</button>
+        <p id="additionalInfo">
+            We provide a wide range of services including grooming, training, and pet accessories. Our trained staff members are dedicated to providing the best care for your beloved pets.
+        </p>
+        <div>
+            <img src="" alt="" class="img_fluid">
+            <img src="" alt="" class="img_fluid">
+        </div>
+    </section>
+    <section id="service">
+        <h2>Our Services</h2>
+        <div id="productsAndServices">
+            <ul class="service_list">
+                <li>Grooming</li>
+                <li>Daycare</li>
+                <li>Lodging</li>
+                <li>Breeding</li>
+                <li>Products</li>
+            </ul>
+        </div>
+        <button class="btn" onclick="changeFontStyle()">Change Font Style</button>
+        <div>
+            <h4>Click the link to book an appointment</h4>
+            <a href="appointment.html" class="book_link"></a>
+        </div>
+        <button id="changeColorButton" onclick="toggleTheme()">Toggle Colour</button>
+    </section>
+    <section>
+        <address id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2419.718552082528!2d-1.1700440236119793!3d52.66506102547998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877606893e73641%3A0xe9fac030612f5a83!2sPets%20at%20Home%20Leicester%20Beaumont!5e0!3m2!1sen!2suk!4v1697188530608!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+            Visit us at:<br>
+            PetsAtHome.com<br>
+            Beaumont Leys Lane, Leicester<br>
+            UK
+        </address>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
